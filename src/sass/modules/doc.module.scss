@@ -1,0 +1,16 @@
+.documentation {
+    width: 100%;
+    display: flex;
+}
+
+.sidebar {
+    width: 360px;
+    height: fit-content;
+    background-color: aqua;
+}
+
+.main {
+    width: calc(100% - 360px);
+    position: absolute;
+    right: 0;
+}
