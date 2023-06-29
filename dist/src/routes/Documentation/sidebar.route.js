@@ -1,5 +1,5 @@
 
-export function Render_Router(Sidebar){
+export function Sidebar_Router(Sidebar){
 
     function handleNavigation(event) {
         event.preventDefault();

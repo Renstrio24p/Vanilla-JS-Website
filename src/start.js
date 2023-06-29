@@ -3,8 +3,8 @@ import styles from './sass/modules/app.module.scss';
 import docstyles from './sass/modules/doc.module.scss';
 import classNames from 'classnames/bind';
 
-export const cx = classNames.bind(styles);
-export const cd = classNames.bind(docstyles);
+export const cx = classNames.bind(styles),
+             cd = classNames.bind(docstyles);
 
 export default function Start(DOM) {
   // Function here
