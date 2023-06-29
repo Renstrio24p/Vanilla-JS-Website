@@ -6,13 +6,13 @@ export default function Footer_ContactUS(Contact){
         `
             <div>
                 <h2>News Letters</h2>
-                <form class=${cx('d-flex-gap-5')}>
+                <div class=${cx('d-flex-gap-5')}>
                     <img class=${cx('email-icon')} src='./src/images/icons/email.webp' alt="email icon" />
                     <div class=${cx('d-flex-gap-5')}>
                         <input class=${cx('footer-input')} type='email' name='email' placeholder='abc@domain.com' />
                         <button class=${cx('subscribe-btn')} type='submit'> Subscribe</button>
                     </div>
-                </form>
+                </div>
             </div>
 
             <ul class=${cx('d-flex-gap-10-left')}>
