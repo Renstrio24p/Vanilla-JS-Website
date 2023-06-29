@@ -1,4 +1,4 @@
-import { cx } from "../../../start"
+import { cx } from "../../../../start"
 
 export default function ModularSection(Modular){
 
@@ -34,7 +34,7 @@ export default function ModularSection(Modular){
                 </div>
             </div>
 
-            <div>
+            <div class=${cx('d-flex-w-max')}>
 
                 <p class=${cx('pad-10')}>
                     Generic Modular Style :

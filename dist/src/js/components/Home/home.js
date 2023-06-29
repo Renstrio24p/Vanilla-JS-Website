@@ -1,5 +1,6 @@
-import UniqueHash from "../../security/HashCode";
-import { cx } from "../../start";
+import HomePage from "../../../pages/Home";
+import UniqueHash from "../../../security/HashCode";
+import { cx } from "../../../start";
 
 export default function HomeSection(Home){
 
@@ -25,4 +26,12 @@ export default function HomeSection(Home){
         `
     )
 
+}
+
+export function DefaultPage(){
+    const DefaultPage = document.getElementById('default');
+    window.addEventListener('DOMContentLoaded', () => {
+        DefaultPage.id = UniqueHash();
+    })
+    HomePage(DefaultPage);
 }

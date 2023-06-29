@@ -1,4 +1,4 @@
-import { cx } from "../../../start"
+import { cx } from "../../../../start"
 
 export default function WebSecuritySection(WebSecure){
 
@@ -7,7 +7,7 @@ export default function WebSecuritySection(WebSecure){
         `
         <p class=${cx('methods')}> III - Web Security </p>
         <div class=${cx('d-flex-between')}>
-            <div>
+            <div class=${'d-flex-w-max'}>
                 <h3>Hashing Method</h3>
                 <p class=${cx('intro-info')}>
                     Hashing is a fundamental method used in web security
@@ -50,7 +50,7 @@ export default function WebSecuritySection(WebSecure){
                     </pre>                         
             </div>
 
-            <div>
+            <div class=${cx('d-flex-w-max')}>
                 <pre>
                     const generatedHashes = new Set();
 

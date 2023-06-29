@@ -14,17 +14,30 @@
 	align-items: center;
 }
 .navbar {
-	justify-content: space-between;
-	padding: 10px;
-	position: fixed;
-	width: 100%;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 	background: #fff;
 	background: radial-gradient(circle, #fff 0, #373909 0, #eaff00 95%);
 }
+
+
 .logo-container,
 .nav-links {
 	gap: 20px;
 }
+
+.nav-links  a {
+	color: #000;
+}
+
+
+
 .logo {
 	width: 50px;
 	height: 50px;
@@ -76,6 +89,8 @@
 	color: transparent;
 }
 .contribute-name,
+.stacks-name,
+.links,
 pre {
 	color: #fff;
 }
@@ -187,6 +202,11 @@ pre {
 	flex-direction: column;
 	gap: 10px;
 }
+.d-flex-gap-30 {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
 .d-flex-gap-5px {
 	display: flex;
 	justify-content: center;
@@ -199,12 +219,46 @@ pre {
 	align-items: center;
 	padding: 10px;
 }
+
+.d-flex-start {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.d-flex-column {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+}
 .d-grid-gap-10-left {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	width: 100%;
 	gap: 10px;
+	align-items: center;
 }
+
+.d-flex-gap-5 {
+	display: flex;
+	gap: 5px;
+	width: 100%;
+	align-items: center;
+}
+
+.d-flex-w-max {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.d-flex-w-half {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
 .methods,
 .pad-10 {
 	padding: 10px;
@@ -278,6 +332,26 @@ pre {
 	border-radius: 50%;
 	height: auto;
 }
+
+.footer-input {
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+}
+
+.footer-icon-stacks {
+	width: 50px;
+}
+
+.subscribe-btn {
+	padding: 5px;
+	background-color: #eaff00;
+	border: none;
+	border-radius: 5px;
+}
+
 @media only screen and (max-width: 921px) {
 	.feature-div {
 		grid-template-columns: repeat(2, 1fr);

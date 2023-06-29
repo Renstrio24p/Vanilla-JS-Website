@@ -1,5 +1,5 @@
-import About_Render from "../../render/about.render";
-import { cx } from "../../start";
+import About_Render from "../../../render/Home/about.render";
+import { cx } from "../../../start";
 
 export default function AboutSection(About){
     About.innerHTML = (

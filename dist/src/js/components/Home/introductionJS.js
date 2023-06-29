@@ -1,5 +1,6 @@
-import Intro_Render from "../../render/Intro.render";
-import { cx } from "../../start"
+
+import Intro_Render from "../../../render/Home/Intro.render";
+import { cx } from "../../../start"
 
 export default function IntroSection(Intro){
     Intro.innerHTML = (

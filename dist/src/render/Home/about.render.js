@@ -1,7 +1,7 @@
-import ES10Section from "../js/components/about-components/es10";
-import UniqueHash from "../security/HashCode";
+import ES10Section from "../../js/components/Home/about-components/es10";
+import UniqueHash from "../../security/HashCode";
 
-export default function About_Render(AboutRender){
+export default function About_Render(){
 
     const ES10 = document.getElementById('es10');
 

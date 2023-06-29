@@ -1,8 +1,8 @@
-import InstallationSection from "../js/components/intro-components/installation";
-import ModularSection from "../js/components/intro-components/modular";
-import RenderingSection from "../js/components/intro-components/rendering";
-import WebSecuritySection from "../js/components/intro-components/websecurity";
-import UniqueHash from "../security/HashCode";
+import InstallationSection from "../../js/components/Home/intro-components/installation";
+import ModularSection from "../../js/components/Home/intro-components/modular";
+import RenderingSection from "../../js/components/Home/intro-components/rendering";
+import WebSecuritySection from "../../js/components/Home/intro-components/websecurity";
+import UniqueHash from "../../security/HashCode";
 
 export default function Intro_Render(){
 

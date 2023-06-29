@@ -1,4 +1,4 @@
-import { cx } from "../../../start"
+import { cx } from "../../../../start"
 
 export default function InstallationSection(Install){
     

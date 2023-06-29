@@ -1,3 +1,4 @@
+import { Render_Router } from "../routes/Home/nav.route";
 import { cx } from "../start";
 
 
@@ -11,12 +12,13 @@ export default function Navbar(Nav){
             </div>
 
             <ul class=${cx('nav-links')}>
-                <li>Home</li>
-                <li>About</li>
-                <li>About US</li>
+                <li><a href='#Home'>Home</a></li>
+                <li><a href='#Documentation'>Documentation</a></li>
+                <li><a href='#AboutUS'>AboutUS</a></li>
             </ul>
         `
     )
 
+    Render_Router(Nav);
 
 }

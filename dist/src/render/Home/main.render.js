@@ -1,9 +1,9 @@
-import AboutSection from "../js/components/about";
-import HomeSection from "../js/components/home";
-import IntroSection from "../js/components/introductionJS";
-import UniqueHash from "../security/HashCode";
+import AboutSection from "../../js/components/Home/about";
+import HomeSection from "../../js/components/Home/home";
+import IntroSection from "../../js/components/Home/introductionJS";
+import UniqueHash from "../../security/HashCode";
 
-export default function Main_Render(){
+export default function Home_Render(){
     const Home = document.getElementById('home');
     const About = document.getElementById('about');
     const Intro = document.getElementById('intro-js');

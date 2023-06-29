@@ -1,8 +1,10 @@
 import Render from './render/start.render';
 import styles from './sass/modules/app.module.scss';
+import docstyles from './sass/modules/doc.module.scss';
 import classNames from 'classnames/bind';
 
 export const cx = classNames.bind(styles);
+export const cd = classNames.bind(docstyles);
 
 export default function Start(DOM) {
   // Function here
@@ -16,5 +18,4 @@ export default function Start(DOM) {
   `;
 
     Render(); // Renders all your JS Components
-
 }
