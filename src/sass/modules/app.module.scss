@@ -15,29 +15,23 @@
 }
 .navbar {
 	display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background: #fff;
 	background: radial-gradient(circle, #fff 0, #373909 0, #eaff00 95%);
 }
-
-
 .logo-container,
 .nav-links {
 	gap: 20px;
 }
-
-.nav-links  a {
+.nav-links a {
 	color: #000;
 }
-
-
-
 .logo {
 	width: 50px;
 	height: 50px;
@@ -89,8 +83,8 @@
 	color: transparent;
 }
 .contribute-name,
-.stacks-name,
 .links,
+.stacks-name,
 pre {
 	color: #fff;
 }
@@ -146,6 +140,11 @@ pre {
 	font-weight: 500;
 	padding: 20px 0 10px;
 }
+#collab,
+.contact-container,
+.intro-info {
+	width: 100%;
+}
 pre {
 	white-space: pre-line;
 	overflow-x: auto;
@@ -176,9 +175,6 @@ pre {
 .intro-div {
 	background-color: #fcfa7052;
 }
-.intro-info {
-	width: 100%;
-}
 .d-flex-between {
 	display: flex;
 	justify-content: space-between;
@@ -197,6 +193,7 @@ pre {
 	height: 100%;
 	gap: 10px;
 }
+.d-flex-column,
 .d-flex-gap-10 {
 	display: flex;
 	flex-direction: column;
@@ -219,19 +216,16 @@ pre {
 	align-items: center;
 	padding: 10px;
 }
-
 .d-flex-start {
 	width: 100%;
 	padding: 20px;
 	display: flex;
 	align-items: flex-start;
 }
-
-.d-flex-column {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-
+.methods,
+.pad-10,
+.web-info {
+	padding: 10px;
 }
 .d-grid-gap-10-left {
 	display: grid;
@@ -240,14 +234,12 @@ pre {
 	gap: 10px;
 	align-items: center;
 }
-
 .d-flex-gap-5 {
 	display: flex;
 	gap: 5px;
 	width: 100%;
 	align-items: center;
 }
-
 .d-flex-w-max {
 	display: flex;
 	flex-direction: column;
@@ -257,11 +249,6 @@ pre {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-}
-
-.methods,
-.pad-10 {
-	padding: 10px;
 }
 .nodejs-logo {
 	width: 100px;
@@ -273,7 +260,6 @@ pre {
 }
 .web-info {
 	width: auto;
-	padding: 10px;
 }
 .footer {
 	width: 100%;
@@ -309,14 +295,14 @@ pre {
 .github-icon {
 	width: 20px;
 }
-.email-icon {
+.email-icon,
+.footer-icon-stacks {
 	width: 50px;
 }
 .footer-icons {
 	width: 30px;
 }
 .links {
-	color: #ffffff;
 	padding: 5px;
 }
 .collab-box {
@@ -332,34 +318,26 @@ pre {
 	border-radius: 50%;
 	height: auto;
 }
-
 .footer-input {
 	width: 100%;
 	padding: 5px;
 	border-radius: 5px;
-	outline: none;
+	outline: 0;
 	border: none;
 }
-
-.footer-icon-stacks {
-	width: 50px;
-}
-
 .subscribe-btn {
 	padding: 5px;
 	background-color: #eaff00;
 	border: none;
 	border-radius: 5px;
 }
-
-@media only screen and (max-width: 1197px){
+@media only screen and (max-width: 1197px) {
 	.top-footer {
 		display: grid;
-		grid-template-columns: repeat(1,1fr);
+		grid-template-columns: repeat(1, 1fr);
 		justify-content: center;
 	}
 }
-
 @media only screen and (max-width: 921px) {
 	.feature-div {
 		grid-template-columns: repeat(2, 1fr);
@@ -377,6 +355,14 @@ pre {
 @media only screen and (max-width: 829px) {
 	pre {
 		width: 100%;
+	}
+}
+@media only screen and (max-width: 809px) {
+	.top-footer .d-flex-w-half {
+		width: 100%;
+	}
+	#contact-us .d-flex-gap-10-left {
+		padding: 5px;
 	}
 }
 @media only screen and (max-width: 669px) {
@@ -427,38 +413,42 @@ pre {
 		display: none;
 	}
 }
-
-@media only screen and (max-width: 493px){
-	.top-footer .d-flex-w-max {
+@media only screen and (max-width: 498px) {
+	#webstacks .d-grid-gap-10-left li,
+	.d-flex-gap-10-left {
+		width: 100%;
 		display: grid;
-		justify-content: left;
+		grid-template-columns: repeat(2, 1fr);
 	}
-
-	.top-footer #webstacks {
+	#contact-us .d-grid-gap-10-left {
 		width: 100%;
-		justify-content: left;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
 	}
-
-	.top-footer .d-grid-gap-10-left{
-		grid-template-columns: repeat(1,1fr);
-	}
-
-	.top-footer .d-flex-gap-10-left li {
-		width: 100%;
-		display: flex;
-	}	
 }
-
-@media only screen and (max-width:398px) {
+@media only screen and (max-width: 480px) {
+	.d-grid-gap-10-left {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	#contact-us .d-flex-gap-10-left {
+		display: flex;
+	}
+}
+@media only screen and (max-width: 398px) {
 	.top-footer .d-flex-w-half {
 		width: 100%;
 	}
-
-	#contact-us .d-flex-gap-10-left{
+	#contact-us .d-flex-gap-10-left {
 		padding: 5px;
 	}
+	#contact-us .d-flex-gap-5 {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
-
 @media only screen and (max-width: 441px) {
 	.feature-div {
 		grid-template-columns: repeat(1, 1fr);
