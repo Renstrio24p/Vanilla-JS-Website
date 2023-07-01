@@ -7,10 +7,10 @@ export default function Footer(Foot){
         `
             <div class=${cx('footer-container')}>
                 <div class=${cx('top-footer')}>
-                        <div class=${cx('d-flex-w-max')}>
-                            <div id='developers'></div>
-                            <div id='webstacks'></div>
-                        </div>
+                    <div class=${cx('d-flex-w-max')}>
+                        <div id='developers'></div>
+                        <div id='webstacks'></div>
+                    </div>
                     <div class=${cx('divider')}></div>
                     <div class=${cx('d-flex-w-max')}>
                         <div id='collab'></div>

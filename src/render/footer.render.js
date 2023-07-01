@@ -14,7 +14,7 @@ export default function i() {
     f = document.getElementById("copyright");
     
     window.addEventListener("DOMContentLoaded", () => {
-         i.id = e(),
+     //     i.id = e(),
          d.id = e(),
          c.id = e(), 
          p.id = e(),
