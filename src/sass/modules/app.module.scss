@@ -24,6 +24,7 @@
 	width: 100%;
 	background: #fff;
 	background: radial-gradient(circle, #fff 0, #373909 0, #eaff00 95%);
+	z-index: 2;
 }
 .logo-container,
 .nav-links {
@@ -83,7 +84,6 @@
 	color: transparent;
 }
 .contribute-name,
-.links,
 .stacks-name,
 pre {
 	color: #fff;
@@ -265,6 +265,7 @@ pre {
 	width: 100%;
 	padding: 20px;
 	background-color: #222121;
+	z-index: 9;
 }
 .footer-container {
 	width: 100%;
@@ -313,6 +314,24 @@ pre {
 	display: flex;
 	align-items: center;
 }
+
+.collab-box .links {
+	color: #fff;
+}
+
+.collab-box:hover {
+	background-color: #fff;
+	transition: .5s;
+}
+
+.collab-box:hover .links {
+	color: #000;
+}
+
+.links {
+	color: #fff;
+}
+
 .profile-img {
 	width: 30px;
 	border-radius: 50%;
